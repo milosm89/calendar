@@ -54,6 +54,9 @@ const renderCalendar = () => {
         days += `<div class="next-date">${j}</div>`;
         monthDays.innerHTML = days;
     }
+    const width = innerWidth;
+    const height = innerHeight;
+    alert(`Your monitor's resolution is '${width}x${height}'`)
 }
 
 
