@@ -16,11 +16,6 @@ html {
   align-items: center;
   padding: 0px 20px;
 }
-@media only screen and (max-width: 350px) {
-  .container {
-    padding: 0px 15px;
-  }
-}
 .calendar {
   width: 100%;
   max-width: 720px;
@@ -40,14 +35,10 @@ html {
     height: 500px;
   }
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 500px) {
   .calendar {
-    max-width: none;
-  }
-}
-@media only screen and (max-width: 420px) {
-  .calendar {
-    height: 400px;
+    max-width: 300px;
+    height: 350px;
   }
 }
 .month {
@@ -66,7 +57,7 @@ html {
     height: 120px;
   }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   .month {
     height: 80px;
   }
@@ -78,11 +69,6 @@ html {
 @media only screen and (max-width: 1200px) {
   .month i {
     font-size: 30px;
-  }
-}
-@media only screen and (max-width: 420px) {
-  .month i {
-    font-size: 25px;
   }
 }
 .month h1 {
@@ -97,7 +83,7 @@ html {
     font-size: 24px;
   }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   .month h1 {
     font-size: 20px;
   }
@@ -117,7 +103,7 @@ html {
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   .weekdays {
     height: 50px;
   }
@@ -132,16 +118,10 @@ html {
   align-items: center;
   text-shadow: 0 4.8px 8px rgba(0, 0, 0, 0.5);
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 500px) {
   .weekdays div {
-    font-size: 20px;
-    width: calc(370px / 7);
-  }
-}
-@media only screen and (max-width: 380px) {
-  .weekdays div {
-    font-size: 16px;
-    width: calc(294px / 7);
+    font-size: 14px;
+    width: calc(260px / 7);
   }
 }
 .days {
@@ -173,26 +153,11 @@ html {
     height: 44px;
   }
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 500px) {
   .days div {
-    width: calc(310px / 7);
-  }
-}
-@media only screen and (max-width: 420px) {
-  .days div {
-    width: calc(300px / 7);
-    height: 40px;
-  }
-}
-@media only screen and (max-width: 380px) {
-  .days div {
-    width: calc(230px / 7);
-  }
-}
-@media only screen and (max-width: 350px) {
-  .days div {
-    width: calc(210px / 7);
-    height: 30px;
+    width: calc(250px / 7);
+    height: 20px;
+    font-size: 16px;
   }
 }
 .days div:hover:not(.today) {

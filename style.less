@@ -1,10 +1,8 @@
 @1200: ~"only screen and (max-width: 1200px)";
 @768: ~"only screen and (max-width: 768px)";
-@380: ~"only screen and (max-width: 380px)";
-@350: ~"only screen and (max-width: 350px)";
-@460: ~"only screen and (max-width: 460px)";
-@420: ~"only screen and (max-width: 420px)";
-@400: ~"only screen and (max-width: 400px)";
+@500: ~"only screen and (max-width: 500px)";
+
+
 
 
 * {
@@ -28,10 +26,6 @@ html {
     align-items: center;
     padding: 0px 20px;
 
-    @media @350 {
-        padding: 0px 15px;
-    }
-
 }
 
 .calendar {
@@ -51,12 +45,9 @@ html {
         height: 500px;
     }
 
-    @media @460 {
-        max-width: none;
-    }
-
-    @media @420 {
-        height: 400px;
+    @media @500 {
+        max-width: 300px;
+        height: 350px;
     }
 
 }
@@ -76,7 +67,7 @@ html {
         height: 120px;
     }
 
-    @media @420 {
+    @media @500 {
         height: 80px;
     }
 
@@ -89,9 +80,6 @@ html {
             font-size: 30px;
         }
 
-        @media @420 {
-            font-size: 25px;
-        }
     }
 
     h1 {
@@ -105,10 +93,11 @@ html {
             font-size: 24px;
         }
 
-        @media @420 {
-            font-size: 20px;
+        @media @500 {
+           font-size: 20px;
         }
-        
+    
+
     }
 
     p {
@@ -128,10 +117,12 @@ html {
     display: flex;
     align-items: center;
 
-    @media @420 {
+
+    @media @500 {
         height: 50px;
     }
 
+  
     div {
         font-size: 24px;
         font-weight: 400;
@@ -142,14 +133,9 @@ html {
         align-items: center;
         text-shadow: 0 4.8px 8px rgba(0,0,0,0.5);
 
-        @media @460 {
-            font-size: 20px;
-            width: calc(370px / 7);
-        }
-
-        @media @380 {
-            font-size: 16px;
-            width: calc(294px / 7);
+        @media @500 {
+            font-size: 14px;
+            width: calc(260px / 7);
         }
 
        
@@ -183,24 +169,11 @@ html {
             height: 44px;
         }
 
-        @media @460 {
-            width: calc(310px / 7);
+        @media @500 {
+            width: calc(250px / 7);
+            height: 20px;
+            font-size: 16px;
         }
-
-        @media @420 {
-            width: calc(300px / 7);
-            height: 40px;
-        }
-
-        @media @380 {
-            width: calc(230px / 7);
-        }
-
-        @media @350 {
-            width: calc(210px / 7);
-            height: 30px;
-        }
-
 
         &:hover:not(.today){
             background-color: #262626;
