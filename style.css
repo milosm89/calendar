@@ -155,7 +155,7 @@ html {
 }
 @media only screen and (max-width: 500px) {
   .days div {
-    width: calc(250px / 7);
+    width: calc(200px / 7);
     height: 20px;
     font-size: 16px;
   }

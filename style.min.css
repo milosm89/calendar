@@ -50,7 +50,7 @@ html{font-size:10px}
 .days div{width:calc(370px / 7);height:44px}
 }
 @media only screen and (max-width:500px){
-.days div{width:calc(250px / 7);height:20px;font-size:16px}
+.days div{width:calc(200px / 7);height:20px;font-size:16px}
 }
 .days div:hover:not(.today){background-color:#262626;border:3.2px solid #777;cursor:pointer}
 .next-date,.prev-date{opacity:.5}
