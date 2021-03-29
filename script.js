@@ -65,13 +65,6 @@ const renderCalendar = () => {
         container.style.height = height + 'px';
     }
 
-    console.log(height);
-    console.log(container.offsetHeight);
-    console.log(calendarHeight.offsetHeight);
-
-   
-
-
 }
 
 
