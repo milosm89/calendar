@@ -56,7 +56,21 @@ const renderCalendar = () => {
     }
     const height = innerHeight;
     const container = document.querySelector(".container");
-    container.style.height = height + 'px';
+    const calendarHeight = document.querySelector('.calendar');
+    
+    if(height < calendarHeight.offsetHeight) {
+        container.style.height = calendarHeight.offsetHeight + 40 + 'px';
+    }else {
+
+        container.style.height = height + 'px';
+    }
+
+    console.log(height);
+    console.log(container.offsetHeight);
+    console.log(calendarHeight.offsetHeight);
+
+   
+
 
 }
 
